@@ -10,7 +10,7 @@ const AboutPage = () => {
     <>
       <PageIntro eyebrow="About us" title="I find my strength in persistence and collaboration">
         <p>
-        From a very young age, I have always derived this joy, satisfaction and sense of accomplishment from inventing new things, for establishing projects that weren't initially there.
+        From a very young age, I have always derived this joy, satisfaction and sense of accomplishment from inventing new things, for establishing projects that were not initially there.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
@@ -22,13 +22,7 @@ const AboutPage = () => {
           </p>
         </div>
       </PageIntro>
-      {/* <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container> */}
+     
       <Cultures />
       <ContactSection />
     </>
