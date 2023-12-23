@@ -14,17 +14,12 @@ const Values = () => {
         />
       </div>
       <SectionIntro
-        eyebrow="Our values"
+        eyebrow="Work values"
         title="Balancing reliability and innovation"
       >
-        <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
-        </p>
+       
       </SectionIntro>
-      <Container className="mt-24">
+      <Container className="mt-24 font-poppins">
         <GridList>
           <GridListItem title="Meticulous">
             The first part of any partnership is getting our designer to put
@@ -32,24 +27,24 @@ const Values = () => {
             colors.
           </GridListItem>
           <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+            My pride comes from  never missing a deadline which is easy because
+            most of the work was done years ago. I try as much as possible to work with the timeframe, and that is why I bring my clients into the project.
           </GridListItem>
           <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+            Every business has unique needs and one of the greatest challenge is
+            shoe-horning those needs into something we already built. Scalability is a priority.
           </GridListItem>
           <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+            I am transparent about all of my processes, banking on the simple
+            fact that clients never actually read anything.
           </GridListItem>
           <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+            I foster long-term relationships with clients that go beyond
+            just delivering a product.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+            The technological landscape is always evolving and so am I. I am
+            constantly on the lookout for new open source projects to clone and new platforms to learn and adopt.
           </GridListItem>
         </GridList>
       </Container>

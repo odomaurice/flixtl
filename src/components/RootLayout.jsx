@@ -24,14 +24,14 @@ const Header = ({
   // Container
   return (
     <Container>
-      <div className="flex items-center justify-between">
+      <div className="flex font-quicksand items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo invert={invert}>Studio_clone</Logo>
+          <Logo invert={invert}>Alphacodez</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>
-            Contact us
+            Contact me
           </Button>
           <button
             ref={toggleRef}
@@ -85,11 +85,11 @@ const Navigation = () => {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/work"> Work</NavigationItem>
+        <NavigationItem href="/about">About</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
+        <NavigationItem href="/process">Process</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
       </NavigationRow>
     </nav>
@@ -166,18 +166,10 @@ const RootLayoutInner = ({ children }) => {
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
-                  <div>
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
-                    </h2>
-                    <Offices
-                      invert
-                      className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
-                  </div>
+                  
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                      Follow me
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>

@@ -1,14 +1,34 @@
+'use client'
+
 import React from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser"
+import {ToastContainer, toast} from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
 import FadeIn from "./FadeIn";
 import TextInput from "./TextInput";
 import RadioInput from "./RadioInput";
 import Button from "./Button";
 
+
 const ContactForm = () => {
+  const form = useRef();
+
+  const sendMail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm("service_iiv2jbd","template_1nia8s9",form.current,"wQFcmgXjcjqHYluEe")
+     .then(() =>{
+       toast.success("Message sent successfully!!")
+     }, () => {
+       toast.error("Something went wrong!")
+     })
+     e.target.reset()
+  
+  }
   return (
     <FadeIn>
-      <form>
-        <h2 className="font-display text-base font-semibold text-neutral-950">
+      <form ref={form} onSubmit={sendMail} className="font-poppins">
+        <h2 className=" text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
@@ -26,22 +46,19 @@ const ContactForm = () => {
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
-            </fieldset>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <RadioInput label="$25K – $50K" name="budget" value="25" />
-              <RadioInput label="$50K – $100K" name="budget" value="50" />
-              <RadioInput label="$100K – $150K" name="budget" value="100" />
-              <RadioInput label="More than $150K" name="budget" value="150" />
-            </div>
-          </div>
+          
         </div>
-        <Button type="submit" className="mt-10">
+        <Button type="submit" className="mt-10 p-3">
           Let’s work together
         </Button>
       </form>
+      <ToastContainer
+       position="top-center"
+       hideProgressBar={true}
+       theme="light"
+       autoClose={3000}
+      
+      />
     </FadeIn>
   );
 };

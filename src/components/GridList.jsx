@@ -33,7 +33,7 @@ export function GridListItem({ title, children, className, invert = false }) {
         <Border position="left" className="pl-8" invert={invert}>
           <strong
             className={clsx(
-              "font-semibold",
+              "font-semibold text-xl",
               invert ? "text-white" : "text-neutral-950"
             )}
           >
