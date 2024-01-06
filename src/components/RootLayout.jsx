@@ -24,7 +24,7 @@ const Header = ({
   // Container
   return (
     <Container>
-      <div className="flex font-quicksand items-center justify-between">
+      <div className="flex font-poppins items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
           <Logo invert={invert}>Alphacodez</Logo>

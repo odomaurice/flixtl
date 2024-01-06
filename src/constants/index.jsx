@@ -57,7 +57,7 @@ export const skills = [
   {
     id: "skill-1",
     logo: active,
-    title:"Active directory",
+    title:"Azure AD",
   },
   {
     id: "skill-2",

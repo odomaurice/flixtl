@@ -25,7 +25,7 @@ const Skills = () => {
                 <FadeIn>
                 
                   <Image src={skill.logo} alt={skill} className="w-[50px]" unoptimized />
-                  <h5 className="text-white font-poppins ml-2">{skill.title}</h5>
+                  <h5 className="text-white font-poppins ">{skill.title}</h5>
                 </FadeIn>
               </li>
             ))}
