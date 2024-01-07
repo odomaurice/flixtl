@@ -23,18 +23,20 @@ export const navigation = [
       { title: "TechUni", href: "https://techuni.onrender.com/" },
       { title: "CyberPatron React", href: "https://cyberpatron.netlify.app/" },
       { title: "CyberPatron Next", href: "https://cyberpatronnetwork.netlify.app/" },
+      
+      
+    ],
+   
+  },
+  {
+    title: "More Work",
+    links: [
+      
       { title: "portfolio website", href: "/work/my_portfolio" },
       { title: "LocumDoc", href: " https://locumdoc.onrender.com/" },
       { title: "Password generator", href: "https://dancing-sprinkles-588ac2.netlify.app/" },
       { title: "Weather app", href: "https://fancy-kangaroo-b088ae.netlify.app/" },
-      // {
-      //   title: (
-      //     <>
-      //       See all <span aria-hidden="true">&rarr;</span>
-      //     </>
-      //   ),
-      //   href: "/work",
-      // },
+      
     ],
    
   },

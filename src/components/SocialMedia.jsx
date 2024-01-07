@@ -4,9 +4,11 @@ import {
   BsFacebook,
   BsTwitter,
   BsGithub,
-  BsYoutube,
+  BsMedium,
   BsLinkedin,
 } from "react-icons/bs";
+
+import { TbMailUp } from "react-icons/tb";
 
 export const SocialMediaProfiles = [
   // {
@@ -16,13 +18,13 @@ export const SocialMediaProfiles = [
   // },
   { title: "GitHub", href: "https://github.com/odomaurice/", icon: BsGithub },
   {
-    title: "Facebook",
-    href: "https://www.facebook.com/",
-    icon: BsFacebook,
+    title: "Medium",
+    href: "https://medium.com/@cyberSultan",
+    icon: BsMedium,
   },
   {
     title: "LinkedIn",
-    href: "linkedin.com/in/🔒odo-maurice-b99197198/",
+    href: "https://www.linkedin.com/in/%F0%9F%94%92odo-maurice-b99197198/",
     icon: BsLinkedin,
   },
   { title: "Twitter", href: "https://twitter.com/AlphaOf9ja/", icon: BsTwitter },

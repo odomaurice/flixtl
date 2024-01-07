@@ -10,6 +10,7 @@ const FooterNavigation = () => {
             <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
               {item.title}
             </div>
+           
             <ul role="list" className="mt-4 text-sm text-neutral-700">
               {item.links.map((link) => (
                 <li key={link.title} className="mt-4">
