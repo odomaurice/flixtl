@@ -1,8 +1,8 @@
 import Link from "next/link";
 import clsx from "clsx";
 import {
-  BsFacebook,
-  BsTwitter,
+  BsInstagram,
+  BsTwitterX,
   BsGithub,
   BsMedium,
   BsLinkedin,
@@ -11,11 +11,11 @@ import {
 import { TbMailUp } from "react-icons/tb";
 
 export const SocialMediaProfiles = [
-  // {
-  //   title: "Youtube",
-  //   href: "https://www.youtube.com/@reactjsBD/",
-  //   icon: BsYoutube,
-  // },
+  {
+    title: "Instagram",
+    href: "https://www.instagram.com/mauriceodo/",
+    icon: BsInstagram,
+  },
   { title: "GitHub", href: "https://github.com/odomaurice/", icon: BsGithub },
   {
     title: "Medium",
@@ -27,7 +27,7 @@ export const SocialMediaProfiles = [
     href: "https://www.linkedin.com/in/%F0%9F%94%92odo-maurice-b99197198/",
     icon: BsLinkedin,
   },
-  { title: "Twitter", href: "https://twitter.com/AlphaOf9ja/", icon: BsTwitter },
+  { title: "Twitter", href: "https://twitter.com/AlphaOf9ja/", icon: BsTwitterX },
 ];
 
 const SocialMedia = ({ className, invert = false }) => {
