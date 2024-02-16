@@ -34,10 +34,10 @@ export function GridListItem({ title, children, className, invert = false }) {
           <strong
             className={clsx(
               "font-semibold text-xl",
-              invert ? "text-white" : "text-neutral-950"
+              invert ? "text-default" : "text-neutral-950"
             )}
           >
-            {title}.
+            {title}:
           </strong>{" "}
           {children}
         </Border>

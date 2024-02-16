@@ -17,36 +17,25 @@ import { active,
 
 export const navigation = [
   {
-    title: "Work",
+    title: "Important",
     links: [
-      { title: "Alpha Fatloss", href: "https://odomaurice.github.io/Alpha-energy/index.html" },
-      { title: "TechUni", href: "https://techuni.onrender.com/" },
-      { title: "CyberPatron React", href: "https://cyberpatron.netlify.app/" },
-      { title: "CyberPatron Next", href: "https://cyberpatronnetwork.netlify.app/" },
+      { title: "About", href: "/about" },
+      { title: "Contact", href: "/contact" },
+      { title: "Services", href: "/about" },
+      { title: "Our work", href: "/process" },
       
       
     ],
    
   },
-  {
-    title: "More Work",
-    links: [
-      
-      { title: "portfolio website", href: "/work/my_portfolio" },
-      { title: "LocumDoc", href: " https://locumdoc.onrender.com/" },
-      { title: "Password generator", href: "https://dancing-sprinkles-588ac2.netlify.app/" },
-      { title: "Weather app", href: "https://fancy-kangaroo-b088ae.netlify.app/" },
-      
-    ],
-   
-  },
+ 
   {
     title: "Company",
     links: [
-      { title: "About", href: "/about" },
-      { title: "Process", href: "/process" },
+      { title: "Policy", href: "/about" },
+      { title: "Terms and conditions", href: "/process" },
       { title: "Blog", href: "/blog" },
-      { title: "Contact us", href: "/contact" },
+      { title: "Contact", href: "/contact" },
     ],
   },
   {

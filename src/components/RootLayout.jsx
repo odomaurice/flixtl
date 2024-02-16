@@ -11,7 +11,7 @@ import Button from "./Button";
 import clsx from "clsx";
 import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
-import Footer from "./Footer";
+
 
 const Header = ({
   panelId,
@@ -27,11 +27,15 @@ const Header = ({
       <div className="flex font-poppins items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo className="text-3xl" invert={invert}>🐺&#8482;</Logo>
+          <Logo className="text-[30px] sm:text-[40px] font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
-            Contact me
+       
+        <Link href={"/login"} aria-label="Home">
+          <Logo className="text-xl max-[600px]:hidden sm:block" invert={invert}>Login</Logo>
+        </Link>
+          <Button className='px-12 py-3 text-xl' href={"/contact"} invert={invert}>
+            Contact
           </Button>
           <button
             ref={toggleRef}
@@ -83,14 +87,18 @@ const NavigationItem = ({ href, children }) => {
 
 const Navigation = () => {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+    <nav className="mt-px font-display text-4xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work"> Work</NavigationItem>
+        
         <NavigationItem href="/about">About</NavigationItem>
+        <NavigationItem href="/login"> Login</NavigationItem>
+        <NavigationItem href="/register">Register</NavigationItem>
+         <NavigationItem href="/process">Process</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Process</NavigationItem>
+       
         <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/work">Work</NavigationItem>
       </NavigationRow>
     </nav>
   );
@@ -190,7 +198,7 @@ const RootLayoutInner = ({ children }) => {
         >
           <main className="w-full flex-auto">{children}</main>
           {/* Footer */}
-          <Footer />
+          {/* <Footer /> */}
         </motion.div>
       </motion.div>
     </MotionConfig>

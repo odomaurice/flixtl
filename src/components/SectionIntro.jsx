@@ -19,7 +19,7 @@ const SectionIntro = ({
             <>
               <span
                 className={clsx(
-                  "mb-6 block font-display text-base font-semibold",
+                  "mb-6 block font-display text-2xl font-semibold",
                   invert ? "text-white" : "text-neutral-950"
                 )}
               >
@@ -30,11 +30,11 @@ const SectionIntro = ({
           )}
           <span
             className={clsx(
-              "block font-display tracking-tight [text-wrap:balance]",
+              "block font-display leading-[50px] sm:leading[100px] tracking-tight [text-wrap:balance]",
               smaller
                 ? "text-2xl font-semibold"
-                : "text-4xl font-medium sm:text-5xl",
-              invert ? "text-white" : "text-neutral-950"
+                : "text-2xl font-medium sm:text-4xl",
+              invert ? "text-white" : "text-default"
             )}
           >
             {title}

@@ -6,7 +6,7 @@ import { GridList, GridListItem } from "./GridList";
 
 const Values = () => {
   return (
-    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
+    <div className="relative mt-24 font-poppins pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
       <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b from-neutral-50">
         <GridPattern
           className="absolute inset-0 h-full w-full fill-neutral-100 stroke-neutral-950/5 [mask-image:linear-gradient(to_bottom_left,white_40%,transparent_50%)]"
@@ -21,30 +21,26 @@ const Values = () => {
       </SectionIntro>
       <Container className="mt-24 font-poppins">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="Meticulous" >
+            The first part of any partnership is getting our clients to onboard. The second step is getting them to know and assist them.
           </GridListItem>
           <GridListItem title="Efficient">
-            My pride comes from  never missing a deadline which is easy because
-            most of the work was done years ago. I try as much as possible to work with the timeframe, and that is why I bring my clients into the project.
+            Our pride comes from satisfaction of our clients. We try as much as possible to work with them, and that is why our customer service is 24/7.
           </GridListItem>
           <GridListItem title="Adaptable">
             Every business has unique needs and one of the greatest challenge is
             shoe-horning those needs into something we already built. Scalability is a priority.
           </GridListItem>
           <GridListItem title="Honest">
-            I am transparent about all of my processes, banking on the simple
+            We are transparent about all of my processes, banking on the simple
             fact that clients never actually read anything.
           </GridListItem>
           <GridListItem title="Loyal">
-            I foster long-term relationships with clients that go beyond
-            just delivering a product.
+            We foster long-term relationships with clients that go beyond initial transactions.
           </GridListItem>
           <GridListItem title="Innovative">
-            The technological landscape is always evolving and so am I. I am
-            constantly on the lookout for new open source projects to clone and new platforms to learn and adopt.
+            The technological landscape is always evolving and so are we. We are
+            constantly on the lookout for new technologies to provide seamless experiences to our clients.
           </GridListItem>
         </GridList>
       </Container>

@@ -3,3 +3,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-gradient{ background:linear-gradient(270deg, #F9CBDF 0%, #FF7D7F 100%);}

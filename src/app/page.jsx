@@ -7,6 +7,8 @@ import Testimonials from "@/components/Testimonials";
 import Skills from "@/components/Skills";
 import Link from "next/link"
 import SocialMedia from "@/components/SocialMedia";
+import Footer from "@/components/Footer";
+import Steps from "@/components/Steps";
 
 
 const ArrowIcon = (props) => {
@@ -28,29 +30,19 @@ export default function Home() {
       <Container className="mt-24  sm:mt-32">
         <FadeIn className="max-w-full">
         
-          <h1 className="font-quicksand mx-auto text-center text-5xl font-bold tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            MAURICE ODO
+          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px] leading-[50px] sm:leading-[77.3376px] tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+           <span className="text-default">Transaction</span>{" "}Purity. <br/>
+            
           </h1>
-          <div className="mt-6 text-center  text-base border-black  font-poppins  text-neutral-600">
-            FRONT-END WEB ENGINEER .
-           SOC ANALYST .
-            IT SUPPORT SPECIALIST .
-           CONTENT-WRITER .
-           TUTOR
-          </div>
-         
-          <Link href="/resume.pdf">
-          <button
-            type="submit"
-            aria-label="Submit"
-            className="flex p-3 mx-auto mt-10 font-poppins  items-center justify-center rounded-full bg-neutral-950 text-white transition hover:bg-neutral-800"
-          > Download CV <ArrowIcon className="w-4 ml-1" /> 
-          </button>
-          </Link>
+          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px]  tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+            
+            Happy <span className="text-default ">Returns.</span> 
+          </h1>
           
-         <div className="mx-auto flex my-12 justify-center items-center">
-             <SocialMedia />
-          </div>
+         
+          
+          
+         
        
        
          
@@ -59,8 +51,12 @@ export default function Home() {
       </Container>
       <Skills />
      
-      <Services />
-      <ContactSection />
+     
+      <Services /> 
+      <Steps />
+      <Testimonials />
+     
+      <Footer />
     </main>
   );
 }

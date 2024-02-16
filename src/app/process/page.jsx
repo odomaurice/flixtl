@@ -2,6 +2,7 @@ import Build from "@/components/Build";
 import ContactSection from "@/components/ContactSection";
 import Deliver from "@/components/Deliver";
 import Discover from "@/components/Discover";
+import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
 import Values from "@/components/Values";
 import React from "react";
@@ -9,7 +10,7 @@ import React from "react";
 const ProcessPage = () => {
   return (
     <>
-      <PageIntro eyebrow="Tech process" title="Nature of work">
+      <PageIntro eyebrow="Our process" title="Nature of our work">
         {/* <p>
           We believe in efficiency and maximizing our resources to provide the
           best value to our clients. The primary way we do that is by re-using
@@ -26,7 +27,7 @@ const ProcessPage = () => {
       </div>
       {/* Values */}
       <Values />
-      <ContactSection />
+      <Footer/>
     </>
   );
 };

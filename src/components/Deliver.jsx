@@ -1,32 +1,27 @@
 import React from "react";
 import Section from "./Section";
-import imageMeeting from "@/images/meeting.jpg";
+
+import deliver from "@/images/deliver.jpg";
 import List, { ListItem } from "./List";
 
 const Deliver = () => {
   return (
-    <Section title="Deliver" image={{ src: imageMeeting, shape: 1 }}>
+    <Section title="Deliver" image={{ src: deliver, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{" "}
+          About halfway through the Build phase, we conduct timely survey and check to take note of how our clients are faring on the{" "}
           <strong className="font-semibold text-neutral-950">
-            requirements
+            application
           </strong>
-          . This allows us to increase the budget a final time before launch.
+          . This allows us to avoid single point of failure.
         </p>
        
         <p>
-          We ensure that the main pages of the site are{" "}
+          We ensure that the all possible mishaps{" "}
           <strong className="font-semibold text-neutral-950">
-            fully functional
+            are curtailed and hence satisfaction is achieved.
           </strong>{" "}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{" "}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{" "}
-          retainer.
+          
         </p>
       </div>
      
