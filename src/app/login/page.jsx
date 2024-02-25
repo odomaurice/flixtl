@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from "next/image"
 import Link from "next/link"
@@ -9,6 +9,9 @@ import { FaGoogle } from "react-icons/fa"
 import { TbCircleArrowLeftFilled } from "react-icons/tb"
 import * as Yup from "yup"
 import styles from "@/style"
+
+
+
 
 
 const validationSchema = Yup.object().shape({
@@ -51,13 +54,14 @@ const Login = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 2 }}
     >
+      
       <section>
         <div
           className={`${styles.paddingX} ${styles.flexCenter} font-poppins  min-h-screen`}
         >
           {/* <div className="absolute z-[1] w-[100%] h-[100%] -top-[80%]  rounded-full blue__gradient bottom-40" /> */}
           <div className={`${styles.boxWidth} px-[30px] z-[5]`}>
-            <h1 className="text-black text-center font-bold text-[30px] sm:text-[40px] z-[5]">
+            <h1 className="text-white text-center font-bold text-[30px] sm:text-[40px] z-[5]">
               <Link href="/" className="cursor-pointer z-[1000px]">
                 <TbCircleArrowLeftFilled className="text-default mb-6  w-[50px] h-[50px]  mt-12 z-[1000px] cursor-pointer" />
               </Link>
@@ -70,7 +74,7 @@ const Login = () => {
             >
               <Form className="">
                 <div className="py-[10px]">
-                  <label htmlFor="email" className="text-black">
+                  <label htmlFor="email" className="text-white">
                     Email:
                   </label>
                   <br />
@@ -78,7 +82,7 @@ const Login = () => {
                     type="text"
                     id="email"
                     name="email"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="email"
@@ -88,7 +92,7 @@ const Login = () => {
                 </div>
 
                 <div className="py-[10px]">
-                  <label htmlFor="password" className="text-black">
+                  <label htmlFor="password" className="text-white">
                     Password:
                   </label>
                   <br />
@@ -96,7 +100,7 @@ const Login = () => {
                     type="text"
                     id="password"
                     name="password"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="password"
@@ -115,7 +119,7 @@ const Login = () => {
                     </button>
                   </Link>
 
-                  <p className="py-3 text-black text-2xl text-center">OR</p>
+                  <p className="py-3 text-white text-2xl text-center">OR</p>
 
                   <Link href="">
                     <button 
@@ -126,7 +130,7 @@ const Login = () => {
                       Sign in with Google
                     </button>
                   </Link>
-                  <p className={` ${styles.flexCenter} text-black pt-[10px]  text-[12px]`}>
+                  <p className={` ${styles.flexCenter} text-white pt-[10px]  text-[12px]`}>
                     Not yet a member?
                     <Link
                       href="/register"

@@ -1,7 +1,0 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Poppins:wght@400;700&family=Quicksand:wght@400;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.primary-gradient{ background:linear-gradient(270deg, #F9CBDF 0%, #FF7D7F 100%);}

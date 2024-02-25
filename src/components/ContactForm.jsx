@@ -48,7 +48,7 @@ const ContactForm = () => {
           <TextInput label="Message" name="message" />
           
         </div>
-        <Button type="submit" className="mt-10 p-3">
+        <Button type="submit" className="my-10 p-3">
           Let’s work together
         </Button>
       </form>

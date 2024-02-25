@@ -1,12 +1,12 @@
-import RootLayout from "@/components/RootLayout";
-import "./globals.css";
+
+import "./ui/globals.css";
 import { IoIosArrowUp } from "react-icons/io";
 import { BsChatDotsFill } from "react-icons/bs";
 import Link from "next/link"
 
 export const metadata = {
   title: {
-    template: "my blog",
+   
     default: "Apex - seamless transaction agency",
   },
 };
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
       className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
     >
       <body className="flex min-h-full flex-col">
-        <RootLayout>{children}</RootLayout>
+        {children}
         <Link href="#">
             <IoIosArrowUp className="text-[40px] scroll-smooth text-default right-[5px] fixed bottom-[5px] border border-gray-800 hover:border-secondary cursor-pointer rounded-full p-1 " />
           </Link>

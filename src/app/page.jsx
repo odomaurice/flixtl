@@ -1,14 +1,16 @@
 
-import ContactSection from "@/components/ContactSection";
+
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Skills from "@/components/Skills";
 import Link from "next/link"
-import SocialMedia from "@/components/SocialMedia";
 import Footer from "@/components/Footer";
 import Steps from "@/components/Steps";
+import RootLayout from "@/components/RootLayout";
+
+ 
 
 
 const ArrowIcon = (props) => {
@@ -26,8 +28,12 @@ const ArrowIcon = (props) => {
 
 export default function Home() {
   return (
-    <main className="text-black">
-      <Container className="mt-24  sm:mt-32">
+    <RootLayout>
+   
+    <main className="text-black"> 
+   
+       <Container className="mt-24  sm:mt-32">
+     
         <FadeIn className="max-w-full">
         
           <h1 className="font-poppins mx-auto  text-3xl font-[72.96px] leading-[50px] sm:leading-[77.3376px] tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
@@ -46,17 +52,25 @@ export default function Home() {
        
        
          
-        </FadeIn>
+        </FadeIn> 
+       
+         </Container>
         
-      </Container>
-      <Skills />
+     
+     
+      <Skills /> 
+     
      
      
       <Services /> 
-      <Steps />
+      <Steps /> 
+     
       <Testimonials />
      
       <Footer />
-    </main>
+    </main> 
+   
+    </RootLayout>
+   
   );
 }

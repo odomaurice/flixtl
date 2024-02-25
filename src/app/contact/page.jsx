@@ -2,10 +2,19 @@ import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import PageIntro from "@/components/PageIntro";
+import RootLayout from "@/components/RootLayout";
+
+export const metadata = {
+  title: 'Apex | contact us'
+    
+   
+};
+
 
 const ContactPage = () => {
   return (
     <>
+    <RootLayout>
       <PageIntro eyebrow="Contact us" className='font-poppins' title="Let’s work together">
         <p>I can not wait to hear from you.</p>
       </PageIntro>
@@ -15,6 +24,7 @@ const ContactPage = () => {
           <ContactForm />
         </div>
       </Container>
+      </RootLayout>
     </>
   );
 };

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Image from "next/image"
 import Link from "next/link"
@@ -10,6 +10,9 @@ import { motion } from "framer-motion"
 import { FaGoogle } from "react-icons/fa"
 import { TbCircleArrowLeftFilled } from "react-icons/tb"
 import * as Yup from "yup"
+
+
+
 
 const validationSchema = Yup.object().shape({
   fullName: Yup.string().required("Full Name is required"),
@@ -59,8 +62,8 @@ const Register = () => {
             <Link href="/" className="cursor-pointer">
               <TbCircleArrowLeftFilled className="text-default w-[50px] h-[50px]  my-8 z-50 cursor-pointer" />
             </Link>
-            <h1 className="text-black text-center font-bold   text-[30px] sm:text-[40px]">
-              Get Started
+            <h1 className="text-white text-center font-bold   text-[30px] sm:text-[40px]">
+              Create an account
             </h1>
             <Formik
               initialValues={initialValues}
@@ -69,7 +72,7 @@ const Register = () => {
             >
               <Form className="">
                 <div className="py-[10px]">
-                  <label htmlFor="fullName" className="text-black">
+                  <label htmlFor="fullName" className="text-white">
                     Full Name:
                   </label>
                   <br />
@@ -77,7 +80,7 @@ const Register = () => {
                     type="text"
                     id="fullName"
                     name="fullName"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="fullName"
@@ -87,7 +90,7 @@ const Register = () => {
                 </div>
 
                 <div className="py-[10px]">
-                  <label htmlFor="email" className="text-black">
+                  <label htmlFor="email" className="text-white">
                     Email:
                   </label>
                   <br />
@@ -95,7 +98,7 @@ const Register = () => {
                     type="text"
                     id="email"
                     name="email"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="email"
@@ -105,7 +108,7 @@ const Register = () => {
                 </div>
 
                 <div className="py-[10px]">
-                  <label htmlFor="password" className="text-black">
+                  <label htmlFor="password" className="text-white">
                     Password:
                   </label>
                   <br />
@@ -113,7 +116,7 @@ const Register = () => {
                     type="text"
                     id="password"
                     name="password"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="password"
@@ -123,7 +126,7 @@ const Register = () => {
                 </div>
 
                 <div className="py-[10px]">
-                  <label htmlFor="cpassword" className="text-black">
+                  <label htmlFor="cpassword" className="text-white">
                     Confirm Password:
                   </label>
                   <br />
@@ -131,7 +134,7 @@ const Register = () => {
                     type="text"
                     id="cpassword"
                     name="cpassword"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
                   <ErrorMessage
                     name="cpassword"
@@ -141,7 +144,7 @@ const Register = () => {
                 </div>
 
                 <div className="py-[10px]">
-                  <label htmlFor="validation" className="text-black">
+                  <label htmlFor="validation" className="text-white">
                     Validation code:
                   </label>
                   <br />
@@ -150,9 +153,9 @@ const Register = () => {
                     id="validation"
                     name="validation"
                     placeholder="Please enter a valid validation code"
-                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-black border border-gray-700"
+                    className="w-full rounded-3xl outline-none p-[10px] bg-transparent text-white border border-gray-700"
                   />
-                  <Link className="text-black" href="/getCode">Don't have a validation code?</Link>
+                  <Link className="text-white" href="/getCode">Don't have a validation code?</Link>
                   <ErrorMessage
                     name="validation"
                     component="div"
@@ -174,7 +177,7 @@ const Register = () => {
                     </button>
                   </Link>
 
-                  <p className="py-3 text-black text-2xl text-center">OR</p>
+                  <p className="py-3 text-white  text-2xl text-center">OR</p>
 
                  <button 
                       type="submit"
@@ -186,7 +189,7 @@ const Register = () => {
                     
                   
                   <p
-                    className={` ${styles.flexCenter} text-black p-[10px]  text-[12px]`}
+                    className={` ${styles.flexCenter} text-white p-[10px]  text-[12px]`}
                   >
                     Already a member?
                     <Link 

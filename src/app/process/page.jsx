@@ -4,12 +4,21 @@ import Deliver from "@/components/Deliver";
 import Discover from "@/components/Discover";
 import Footer from "@/components/Footer";
 import PageIntro from "@/components/PageIntro";
+import RootLayout from "@/components/RootLayout";
 import Values from "@/components/Values";
 import React from "react";
+
+export const metadata = {
+  title: 'Apex | process'
+    
+   
+};
+
 
 const ProcessPage = () => {
   return (
     <>
+    <RootLayout>
       <PageIntro eyebrow="Our process" title="Nature of our work">
         {/* <p>
           We believe in efficiency and maximizing our resources to provide the
@@ -28,6 +37,7 @@ const ProcessPage = () => {
       {/* Values */}
       <Values />
       <Footer/>
+      </RootLayout>
     </>
   );
 };
