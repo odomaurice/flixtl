@@ -14,8 +14,8 @@ export const metadata = {
 
 
 const UsersPage = async () => {
-  const users = await fetchUsers();
-  console.log(users)
+  // const users = await fetchUsers();
+  // console.log(users)
   return (
     <div className={styles.container}>
       <div className={styles.top}>
