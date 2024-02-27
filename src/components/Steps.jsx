@@ -13,7 +13,7 @@ const Steps = () => {
       <FadeIn className="max-w-full">
         <section id=""
             className=" font-poppins my-12 p-6">
-            <h2 className="my-6 text-center text-2xl font-bold text-black sm:text-5xl">
+            <h2 className="my-6 text-center text-2xl font-bold text-white sm:text-5xl">
                 The three steps
             </h2>
             <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">

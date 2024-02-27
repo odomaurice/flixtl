@@ -17,7 +17,7 @@ export default function Layout({ children }) {
       lang="en"
       className="h-full bg-neutral-950 text-base antialiased text-neutral-100"
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex   min-h-full flex-col">
         {children}
         <Link href="#">
             <IoIosArrowUp className="text-[40px] scroll-smooth text-default right-[5px] fixed bottom-[5px] border border-gray-800 hover:border-secondary cursor-pointer rounded-full p-1 " />

@@ -24,15 +24,15 @@ const Header = ({
   // Container
   return (
     <Container>
-      <div className="flex font-poppins items-center justify-between">
+      <div className="flex  font-poppins items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo className="text-[30px] sm:text-[40px] font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
+          <Logo className="text-[30px] sm:text-[40px] text-white font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
        
         <Link href={"/login"} aria-label="Home">
-          <Logo className="text-xl max-[600px]:hidden sm:block" invert={invert}>Login</Logo>
+          <Logo className="text-xl text-white max-[600px]:hidden sm:block" invert={invert}>Login</Logo>
         </Link>
           <Button className='px-12 py-3 text-xl' href={"/contact"} invert={invert}>
             Contact
@@ -45,7 +45,7 @@ const Header = ({
             aria-controls={panelId}
             className={clsx(
               "group -m-2.5 rounded-full p-2.5 transition",
-              invert ? "hover:bg-white/10" : "hover:bg-neutral-950/10"
+              invert ? "hover:bg-white" : "hover:bg-white"
             )}
             aria-label="Toggle navigation"
           >
@@ -53,8 +53,8 @@ const Header = ({
               className={clsx(
                 "h-6 w-6",
                 invert
-                  ? "fill-white group-hover:fill-neutral-200"
-                  : "fill-neutral-950 group-hover:fill-neutral-700"
+                  ? "fill-white group-hover:fill-white"
+                  : "fill-white group-hover:fill-neutral-950"
               )}
             />
           </button>
@@ -190,7 +190,7 @@ const RootLayoutInner = ({ children }) => {
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-white pt-14"
+        className="relative flex flex-auto overflow-hidden bg-black pt-14"
       >
         <motion.div
           layout
