@@ -18,7 +18,7 @@ const Deliver = () => {
        
         <p>
           We ensure that the all possible mishaps{" "}
-          <strong className="font-semibold text-neutral-950">
+          <strong className="font-semibold text-neutral-100">
             are curtailed and hence satisfaction is achieved.
           </strong>{" "}
           

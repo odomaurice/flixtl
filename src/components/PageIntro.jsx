@@ -6,7 +6,7 @@ import clsx from "clsx";
 const PageIntro = ({ eyebrow, title, children, centered = false }) => {
   return (
     <Container
-      className={clsx("mt-24 sm:mt-32 lg:mt-40", centered && "text-center")}
+      className={clsx("mt-24  sm:mt-32 lg:mt-40 ", centered && "text-center")}
     >
       <FadeIn>
         <h1>
@@ -16,7 +16,7 @@ const PageIntro = ({ eyebrow, title, children, centered = false }) => {
           <span className="sr-only"> - </span>
           <span
             className={clsx(
-              "mt-6 block max-w-5xl font-poppins text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl",
+              "mt-6 block max-w-5xl font-poppins text-5xl font-medium tracking-tight text-neutral-300 [text-wrap:balance] sm:text-6xl",
               centered && "mx-auto"
             )}
           >

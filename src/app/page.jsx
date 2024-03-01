@@ -30,17 +30,17 @@ export default function Home() {
   return (
     <RootLayout>
    
-    <main className="text-black"> 
+    <main className="text-white "> 
    
        <Container className="mt-24  sm:mt-32">
      
         <FadeIn className="max-w-full">
         
-          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px] leading-[50px] sm:leading-[77.3376px] tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px] leading-[50px] sm:leading-[77.3376px] tracking-tight text-white [text-wrap:balance] sm:text-7xl">
            <span className="text-default">Transaction</span>{" "}Purity. <br/>
             
           </h1>
-          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px]  tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+          <h1 className="font-poppins mx-auto  text-3xl font-[72.96px]  tracking-tight text-white [text-wrap:balance] sm:text-7xl">
             
             Happy <span className="text-default ">Returns.</span> 
           </h1>

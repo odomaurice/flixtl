@@ -6,7 +6,7 @@ import { TagList, TagListItem } from "./TagList";
 const Discover = () => {
   return (
     <Section title="Discover" image={{ src: discover, shape: 1 }}>
-      <div className="space-y-6 font-poppins text-base text-neutral-600">
+      <div className="space-y-6 font-poppins text-base text-neutral-100">
         <p>
           Understanding the needs, hopes, and painpoints of our clients is a great virtue,
           we work closely with my clients to understand their{" "}

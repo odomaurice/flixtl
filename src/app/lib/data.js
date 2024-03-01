@@ -1,9 +1,9 @@
 import { User } from "./models";
-import { connectToDB } from "./utils";
+import { dbConnect } from "./db";
 
 export const fetchUsers = async () => {
   try{
-    connectToDB();
+    dbConnect();
     const users = await User.find()
     return users
 
