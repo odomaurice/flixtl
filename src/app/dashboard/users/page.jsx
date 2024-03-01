@@ -4,7 +4,7 @@ import Search from '@/app/ui/dashboard/search/search';
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import Link from 'next/link'
 import Image from 'next/image'
-import { fetchUsers } from '@/app/lib/data';
+import { fetchUsers } from '../../../../lib/data';
 
 export const metadata = {
   title: 'Dashboard | users'

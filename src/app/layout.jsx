@@ -1,7 +1,7 @@
 
 import "./ui/globals.css";
 import { IoIosArrowUp } from "react-icons/io";
-import { BsChatDotsFill } from "react-icons/bs";
+// import { BsChatDotsFill } from "react-icons/bs";
 import Link from "next/link"
 
 export const metadata = {
@@ -23,9 +23,9 @@ export default function Layout({ children }) {
             <IoIosArrowUp className="text-[40px] scroll-smooth text-default right-[5px] fixed bottom-[5px] border border-gray-800 hover:border-secondary cursor-pointer rounded-full p-1 " />
           </Link>
 
-          <Link href="#">
+          {/* <Link href="#">
             <BsChatDotsFill className="text-[40px] text-default left-[5px] fixed bottom-[5px] border border-gray-800hover:border-secondary cursor-pointer rounded-full p-1 " />
-          </Link> 
+          </Link>  */}
       </body>
     </html>
   );
