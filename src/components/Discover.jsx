@@ -10,7 +10,7 @@ const Discover = () => {
         <p>
           Understanding the needs, hopes, and painpoints of our clients is a great virtue,
           we work closely with my clients to understand their{" "}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
+          <strong className="font-semibold text-neutral-300">needs</strong> and
           goals, through this, we provide client satisfaction.
         </p>
         
