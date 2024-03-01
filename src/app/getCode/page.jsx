@@ -69,7 +69,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={avatar1} />
+          <Image src={avatar1} alt='avatar1' />
         </SwiperSlide>
         <SwiperSlide>
         <div className='flex flex-col flex-wrap justify-between mx-3'>
@@ -87,7 +87,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={avatar2} />
+          <Image src={avatar2} alt='avatar2' />
         </SwiperSlide>
         <SwiperSlide>
         <div className='flex flex-col flex-wrap justify-between mx-3'>
@@ -103,7 +103,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={avatar3} />
+          <Image src={avatar3} alt='avatar3' />
         </SwiperSlide>
         <SwiperSlide>
         <div className='flex flex-col flex-wrap justify-between mx-3'>
@@ -119,7 +119,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={avatar4} />
+          <Image src={avatar4} alt='avatar4' />
         </SwiperSlide>
         <SwiperSlide>
         <div className='flex flex-col flex-wrap justify-between mx-3'>
@@ -135,7 +135,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={bot1} />
+          <Image src={bot1} alt='bot1' />
         </SwiperSlide>
         <SwiperSlide>
         <div className='flex flex-col flex-wrap justify-between mx-3'>
@@ -151,7 +151,7 @@ const Code = () => {
            
             </div>
             
-          <Image src={bot2} />
+          <Image src={bot2} alt='bot2' />
         </SwiperSlide>
       </Swiper>
     
