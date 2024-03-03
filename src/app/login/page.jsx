@@ -9,6 +9,7 @@ import { FaGoogle } from "react-icons/fa"
 import { TbCircleArrowLeftFilled } from "react-icons/tb"
 import * as Yup from "yup"
 import styles from "@/style"
+import Logo from "@/components/Logo"
 
 
 
@@ -40,7 +41,13 @@ const onSubmit = (values, { setSubmitting }) => {
   setSubmitting(false)
 }
 
-const Login = () => {
+const Login = ({ 
+  panelId,
+  invert = false,
+  icon: Icon,
+  expanded,
+  onToggle,
+  toggleRef,}) => {
   
 
  
@@ -56,9 +63,13 @@ const Login = () => {
     >
       
       <section>
+      <Link href={"/"} aria-label="Home">
+          <Logo className="text-[30px] sm:text-[40px] text-white mt-3 font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
+        </Link>
         <div
           className={`${styles.paddingX} ${styles.flexCenter} font-poppins  min-h-screen`}
         >
+         
           {/* <div className="absolute z-[1] w-[100%] h-[100%] -top-[80%]  rounded-full blue__gradient bottom-40" /> */}
           <div className={`${styles.boxWidth} px-[30px] z-[5]`}>
             <h1 className="text-white text-center font-bold text-[30px] sm:text-[40px] z-[5]">

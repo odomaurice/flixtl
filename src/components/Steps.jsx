@@ -23,7 +23,7 @@ const Steps = () => {
                     <h3 className="text-center text-xl text-default">
                         Get validation code
                     </h3>
-                    <p className="mt-2  text-center text-md text-slate-500 dark:text-slate-400 sm:block">
+                    <p className="mt-2  text-center text-base  dark:text-slate-100 sm:block">
                         To activate your account, you need a validation code to enjoy full access.
                     </p>
                     <div className="mt-6 flex">
@@ -39,7 +39,7 @@ const Steps = () => {
                     <h3 className="text-center text-xl text-default">
                         Access your dashboard
                     </h3>
-                    <p className="mt-2   text-center text-md text-slate-500 dark:text-slate-400 sm:block">
+                    <p className="mt-2   text-center text-base  dark:text-slate-100 sm:block">
                         Once you are authenticated with the validation code, you have access to the dashboard.
                     </p>
                    
@@ -50,7 +50,7 @@ const Steps = () => {
                     <h3 className="text-center text-xl text-default">
                         You're in, enjoy!
                     </h3>
-                    <p className="mt-2 text-center text-md text-slate-500 dark:text-slate-400 sm:block">
+                    <p className="mt-2 text-center text-base dark:text-slate-100 sm:block">
                         You now have access to all the tools you need to increase your earnings, including credits, wauthdrawals, and even referrals.
                     </p>
                     

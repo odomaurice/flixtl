@@ -10,6 +10,7 @@ import { motion } from "framer-motion"
 import { FaGoogle } from "react-icons/fa"
 import { TbCircleArrowLeftFilled } from "react-icons/tb"
 import * as Yup from "yup"
+import Logo from "@/components/Logo"
 
 
 
@@ -43,7 +44,13 @@ const onSubmit = (values, { setSubmitting }) => {
   setSubmitting(false)
 }
 
-const Register = () => {
+const Register = ({ 
+  panelId,
+  invert = false,
+  icon: Icon,
+  expanded,
+  onToggle,
+  toggleRef,}) => {
  
   return (
     <motion.div
@@ -55,6 +62,9 @@ const Register = () => {
 
     
      <section>
+     <Link href={"/"} aria-label="Home">
+          <Logo className="text-[30px] sm:text-[40px] text-white mt-3 font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
+        </Link>
         <div
           className={`${styles.paddingX}  ${styles.flexCenter} font-poppins  min-h-screen`}
         >

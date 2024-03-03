@@ -8,7 +8,6 @@ import avatar3 from "@/images/avatar3.svg"
 import avatar4 from "@/images/avatar4.svg"
 import bot1 from "@/images/bot1.svg"
 import bot2 from "@/images/bot2.svg"
-import opay from "@/images/Opay.svg"
 import { IoIosArrowDropdown } from "react-icons/io";
 import {  TbCircleArrowLeftFilled } from "react-icons/tb"
 // Import Swiper React components
@@ -25,12 +24,22 @@ import '../../../public/styles.css';
 
 // import required modules
 import { EffectCube, Pagination, Navigation } from 'swiper/modules';
+import Logo from '@/components/Logo';
 
-const Code = () => {
+const Code = ({ 
+  panelId,
+  invert = false,
+  icon: Icon,
+  expanded,
+  onToggle,
+  toggleRef,}) => {
   return (
     
         <>
-        <h1 className='text-center mt-3 text-2xl sm:text-3xl font-poppins'>Swipe to select the perfect account suitable for you</h1>
+        <Link href={"/"} aria-label="Home">
+          <Logo className="text-[30px] sm:text-[40px] text-white my-4 font-poppins font-[18.912px] leading-[30.2592px]" invert={invert}>🐺PEX</Logo>
+        </Link>
+        <h1 className='text-center mt-6  text-2xl sm:text-2xl font-poppins'>Swipe to select a suitable 🐺ccount</h1>
         <Link href="/register" className="cursor-pointer z-[1000px]">
                 <TbCircleArrowLeftFilled className="text-default ml-6 mb-6  w-[50px] h-[50px]  mt-12 z-[1000px] cursor-pointer" />
               </Link>
@@ -56,7 +65,7 @@ const Code = () => {
         className="mySwiper mx-12"
       >
         <SwiperSlide>
-            <div className='flex flex-col flex-wrap justify-between mx-3'>
+            <div className='flex flex-col  flex-wrap justify-between mx-3'>
             <IoIosArrowDropdown className="text-[40px] z-[1000px] scroll-smooth text-green-700 right-[5px] fixed bottom-[5px] border border-gray-800 hover:border-secondary cursor-pointer rounded-full p-1 " /> 
             <p className='text-lg font-poppins mb-3'>For <span className='text-2xl'>O<span className='text-green-700'>P</span>ay</span> 
              </p>

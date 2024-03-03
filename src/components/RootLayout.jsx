@@ -31,11 +31,11 @@ const Header = ({
         </Link>
         <div className="flex items-center gap-x-8">
        
-        <Link href={"/login"} aria-label="Home">
+        {/* <Link href={"/login"} aria-label="Home">
           <Logo className="text-xl text-white max-[600px]:hidden sm:block" invert={invert}>Login</Logo>
-        </Link>
-          <Button className='px-12 py-3 text-xl' href={"/contact"} invert={invert}>
-            Contact
+        </Link> */}
+          <Button className='px-12 py-3 text-xl' href={"/register"} invert={invert}>
+            Register
           </Button>
           <button
             ref={toggleRef}
@@ -95,11 +95,11 @@ const Navigation = () => {
         <NavigationItem href="/register">Register</NavigationItem>
          <NavigationItem href="/process">Process</NavigationItem>
       </NavigationRow>
-      <NavigationRow>
+      {/* <NavigationRow>
        
         <NavigationItem href="/blog">Blog</NavigationItem>
         <NavigationItem href="/work">Work</NavigationItem>
-      </NavigationRow>
+      </NavigationRow> */}
     </nav>
   );
 };

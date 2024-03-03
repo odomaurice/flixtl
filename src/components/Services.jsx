@@ -15,7 +15,7 @@ const Services = () => {
         title="Before choosing us, take a look at the services we offer."
         className="mt-24  font-poppins sm:mt-32 lg:mt-40"
       >
-        <p>
+        <p className="text-neutral-300">
         No more missed opportunities. No shoehorning, railroading or using a jack hammer to crack a walnut.
         </p>
       </SectionIntro>
